@@ -49,6 +49,3 @@ let totalPages = books[1].pages + books[2].pages + books[0].pages;
 
 console.log(`pages: ${totalPages}`);
 
-let h = "hello";
-
-console.log(h.charAt());
