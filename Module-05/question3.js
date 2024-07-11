@@ -38,8 +38,7 @@ let nullContact = {}
 let showContact = (listContacts, index) => {
 
   if ((listContacts instanceof Array) && (Number.isInteger(index))) {
-    console.log(`nome: ${listContacts[index].name}\nphone: ${listContacts[index].phone}\nemail: ${listContacts[index].email}`);
-    console.log("--------------");
+    console.log(`nome: ${listContacts[index].name}\nphone: ${listContacts[index].phone}\nemail: ${listContacts[index].email}\n`);
   } else {
     return console.log("digite uma lista valida ou um indice valido");
   }
@@ -48,8 +47,7 @@ let showContact = (listContacts, index) => {
 let showAllContacts = (listContacts) => {
   if (listContacts instanceof Array) {
     for (let contact of contacts) {
-      console.log(`nome: ${contact.name}\nphone: ${contact.phone}\nemail: ${contact.email}`);
-      console.log("--------------");
+      console.log(`nome: ${contact.name}\nphone: ${contact.phone}\nemail: ${contact.email}\n`);
     }
   } else {
     console.log("lista não é um array");
@@ -57,16 +55,19 @@ let showAllContacts = (listContacts) => {
 }
 
 let addNewContact = (listContacts, newContact) => {
-  if (listContacts instanceof Array && newContact != null) {
+  if (listContacts instanceof Array ) {
     listContacts.push(newContact);
-  }
+  } else (
+    console.log("por favor digite os dados.")
+  )
 }
 
 // show contact input the index
 showContact(contacts, 1);
 
 // add new contact
-addNewContact(contacts, nullContact);
+addNewContact(contacts, newContact);
 
 // show all contacts
 showAllContacts(contacts);
+
