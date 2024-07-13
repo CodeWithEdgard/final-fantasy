@@ -1,12 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
 </head>
+
 <body>
-  
+  <h2>criar conta</h1>
+  <form id="formulario" method="post">
+    <label for="name">Nome:</label>
+    <input type="text" id="name" name="name" value=""><br>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" value=""><br>
+
+    <label for="phone">Telefone:</label>
+    <input type="tel" id="phone" name="phone" value=""><br>
+
+    <label for="senha">Senha:</label>
+    <input type="password" id="senha" name="senha" value=""><br>
+
+    <input type="button" value="salvar" id="salvar" onclick="createUser()">
+  </form>
+  <input type="button" value="mostrar" id="mostrar" onclick="showAllUsers()">
+  <div id="div"></div>
+  <br>
+  <h2>Produtos:</h2>
+  <form action="" method="post">
+
+    <label for="name">Nome:</label>
+    <input type="text" id="prodName"><br>
+
+    <label for="description">descrição:</label>
+    <input type="text" id="description"><br>
+
+    <label for="price">preço:</label>
+    <input type="number" id="price"><br>
+
+    <input type="button" value="salvar" id="prodSalvar" onclick="addProduct()">
+  </form>
+
 </body>
-<script src="./Module-06/index.js"></script>
+<script src="./Module-06/user.js"></script>
+<script src="./Module-06/produtct.js"></script>
+
 </html>
