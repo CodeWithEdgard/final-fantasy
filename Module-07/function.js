@@ -27,4 +27,21 @@ function createArticleWithList(className, textAbout, arrayItens) {
   article.append(ul);
 }
 
-export { createArticleWithList, createArticleWithText}
+function positionTooltip(event) {
+  const tooltip = document.getElementById('tooltip');
+  const tooltipWidth = tooltip.offsetWidth;
+  const tooltipHeight = tooltip.offsetHeight;
+  const pageWidth = window.innerWidth;
+
+  let left = event.pageX + 10;
+  let top = event.pageY + 10;
+
+  if (left + tooltipWidth > pageWidth) {
+    left = event.pageX - tooltipWidth - 10;
+  }
+
+  tooltip.style.left = `${left}px`;
+  tooltip.style.top = `${top}px`;
+}
+
+export { createArticleWithList, createArticleWithText, positionTooltip}
