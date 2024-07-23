@@ -20,7 +20,7 @@ function createArticleWithList(className, textAbout, arrayItens) {
   const ul = document.createElement('ul');
   arrayItens.forEach(item => {
     const li = document.createElement('li');
-    li.textContent = item;
+    li.innerHTML = item;
     ul.append(li);
   });
 

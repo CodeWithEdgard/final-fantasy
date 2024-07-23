@@ -18,21 +18,21 @@ const SKILLS_LIST = [
 ];
 
 const EXPERIENCE_LIST = [
-  'Cargo: Almoxarife',
-  'Empresa: Gimi Instalações Elétricas',
-  'Periodo: 2017 - Atual',
-  'Habilidades: Gerenciamento de estoque',
-  'Habilidades: Organização e logística',
-  'Habilidades: Coordenação de recebimento, armazenamento',
+  '<b>Cargo:</b> Almoxarife',
+  '<b>Empresa:</b> Gimi Instalações Elétricas',
+  '<b>Periodo:</b> 2017 - Atual',
+  '<b>Habilidades:</b> Gerenciamento de estoque',
+  '<b>Habilidades:</b> Organização e logística',
+  '<b>Habilidades:</b> Coordenação de recebimento, armazenamento',
 ];
 
 const EXPERIENCE_LIST2 = [
-  'Curso: BootCamp Back-End Java',
-  'Empresa: Oracle Next One - Alura',
-  'Periodo: Jan-24 a Julho-24 - Finalizado',
-  'Habilidades: Desenvolvimento eficiente de APIs com Spring Boot',
-  'Habilidades: Integração com banco de dados relacional utilizando JPA',
-  'Habilidades: Implementação de teste unitários e de integração'
+  '<b>Curso:</b> BootCamp Back-End Java',
+  '<b>Empresa:</b> Oracle Next One - Alura',
+  '<b>Periodo:</b> Jan/2024 a Jul/2024 - Concluido',
+  '<b>Habilidades:</b> Desenvolvimento eficiente de APIs com Spring Boot',
+  '<b>Habilidades:</b> Integração com banco de dados relacional utilizando JPA',
+  '<b>Habilidades:</b> Implementação de teste unitários e de integração'
 ]
 
 const PROJECT_LIST = [
